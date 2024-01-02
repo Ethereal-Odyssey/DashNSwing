@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Dash N Swing</string>
+    <string name="title_activity_main">Dash N Swing</string>
+    <string name="package_name">io.github.etherealodyssey.dashnswing</string>
+    <string name="custom_url_scheme">io.github.etherealodyssey.dashnswing</string>
+</resources>
