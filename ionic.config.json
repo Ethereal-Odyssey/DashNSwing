@@ -1,0 +1,7 @@
+{
+  "name": "ethereal-odyssey",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "custom"
+}
