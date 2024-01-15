@@ -1,25 +1,25 @@
-import "phaser";
-import MainScene from "./scenes/main";
+import 'phaser';
+import Game from './scenes/Game';
 
 const config = {
   type: Phaser.AUTO,
-  backgroundColor: "#ffffff",
+  backgroundColor: '#ffffff',
   scale: {
-    parent: "game",
+    parent: 'game',
     mode: Phaser.Scale.FIT,
     width: window.innerWidth * window.devicePixelRatio,
     height: window.innerHeight * window.devicePixelRatio,
   },
-  scene: [MainScene],
+  scene: [Game],
   physics: {
-    default: "arcade",
+    default: 'arcade',
     arcade: {
       debug: false,
-      gravity: { y: 200 },
+      gravity: { y: 0 },
     },
   },
 };
 
-window.addEventListener("load", () => {
+window.addEventListener('load', () => {
   new Phaser.Game(config);
 });
