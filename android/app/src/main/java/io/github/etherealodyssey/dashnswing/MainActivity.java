@@ -1,4 +1,4 @@
-package io.github.etherealodyssey.dashnswing;
+package io.github.etherealodyssey.arc;
 
 import com.getcapacitor.BridgeActivity;
 
