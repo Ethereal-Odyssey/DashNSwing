@@ -45,12 +45,14 @@ export default class Game extends Phaser.Scene {
       const difference: Phaser.Math.Vector2 = endPoint.subtract(
         this.startPoint,
       );
+      this.startPoint = null; // reset for the next swipe
+      if (difference.x === 0 && difference.y === 0) {
+        return;
+      }
       const newVelocity: Phaser.Math.Vector2 = difference.clone();
       newVelocity.normalize();
       newVelocity.scale(2000);
       circleBody.setVelocity(newVelocity.x, newVelocity.y);
-
-      this.startPoint = null; // reset for the next swipe
     });
   }
 }
